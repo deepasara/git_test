@@ -1,0 +1,248 @@
+header, footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  width: 100%;
+    min-width: var(--content-width);
+}
+
+header, footer {
+  color: var(--dark-text);
+}
+
+/* Header only */
+
+header {
+  height: 30px;
+  top: 12px;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  margin: 0;
+  overflow-x: hidden;
+  width: 100vw;
+  --button-color: rgb(242, 242, 242);
+  --content-width: 980px;
+  --dark-text: rgb(51, 51, 51);
+  --green-text: rgb(0, 102, 33);
+  --header-color: rgb(250, 250, 250);
+  --light-text: rgb(117, 117, 117);
+}
+
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+ul {
+  display: inline;
+  padding: 0;
+}
+
+ul li {
+  display: inline-block;
+  padding-left: 15px;
+  vertical-align: middle;
+}
+
+ul li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#nav {
+	display: block;
+	position: absolute;
+	top: 10px;
+	width: 100%;
+	right: 0;
+	font-size: 13px;
+}
+
+.right-nav ul li img {
+  border-radius: 50%;
+}
+
+.left-nav, .left-footer {
+  margin: 7px 0 0 10px;
+  position: absolute;
+  z-index: 1;
+}
+
+.right-nav, .right-footer {
+  float: right;
+  margin: 11px 29px 0 0;
+  position: relative;
+  text-align: right;
+}
+
+#apps {
+  height: 18px;
+  line-height: 0;
+  width: 18px;
+}
+
+#apps div {
+  background: #727272;
+  border: 1px solid white;
+  display: inline-block;
+  height: 4px;
+  width: 4px;
+}
+
+#notifications {
+  background: rgba(0,0,0,0.55);
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+}
+
+#notifications img {
+  margin: 4px 4px;
+}
+
+
+.btn {
+	line-height: 28px;
+}
+
+#content {
+	padding-bottom: 35px;
+	min-width: 980px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#logo {
+	display: block;
+	height: 233px;
+	margin-top: 89px;
+}
+
+#logo img {
+	padding-top: 109px;
+}
+
+#searchbox {
+	margin: 0 auto;
+	width: 833px;
+	height: 50px;
+	overflow: visible;
+}
+
+#search {
+	font: 16px arial, sans-serif;
+	line-height: 34px;
+	height: 44px !important;
+	background: #fff;
+	border-radius: 2px;
+	border: none;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+	margin: 0 auto;
+	padding-left: 12px;
+	padding-top: 6px;
+	display: flex;
+	flex: 1;
+	flex-wrap: wrap;
+	width: 584px;
+	z-index: 3;
+	position: relative;
+}
+
+#search input {
+	background-color: transparent;
+	border: none;
+	margin: 5px 8px 0 16px;
+	padding: 0;
+	color: rgba(0,0,0,.87);
+	word-wrap: break-word;
+	outline: none;
+	--webkit-tap-highlight-color: transparent;
+	font: 16px arial, sans-serif;
+	width: 500px;
+	text-align: start;
+}
+
+#mic {
+	display: flex;
+	flex: 0 0 auto;
+	margin-top: -5px;
+	align-items: stretch;
+	flex-direction: row;
+}
+
+#voice_button {
+	flex: 1;
+	display: flex;
+	cursor: pointer;
+	align-items: center;
+	border: 0px none;
+	background: ;
+	outline: none;
+	width: 24px;
+	line-height: 44px; padding-left:8px; padding-right:8px; padding-top:0; padding-bottom:0
+}
+
+.voice {
+	background: url('https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png') 0 0 no-repeat;
+	height: 24px;
+	width: 24px;
+	background-size: 24px;
+	vertical-align: middle;
+}
+
+#buttons {
+	padding-top: 18px;
+}
+
+#buttons input {
+	font-family: arial,sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	background-color: #f2f2f2;
+	color: #757575;
+	height: 36px;
+	line-height: 27px;
+	border: 1px solid #f2f2f2;
+	border-radius: 2px;
+	margin: 11px 4px;
+	padding: 0 16px;
+}
+
+#buttons input:hover {
+	background-image: url('-webkit-linear-gradient(top,#f8f8f8,#f1f1f1');
+	background-color: #f8f8f8;
+	border: 1px solid #c6c6c6;
+	color: #222;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1)
+}
+
+/* Footer only */
+
+footer {
+  background: var(--button-color);
+  border-top: 1px solid rgb(228, 228, 228);
+  bottom: 0;
+  height: 30px;
+  line-height: 30px;
+  padding-bottom: 8px;
+}
+
+#footer-container {
+  height: 100vh;
+  min-height: 505px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  z-index: -1;
+}
